@@ -7,7 +7,6 @@ class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField(default=None)
     time = models.TimeField(default=None)
-    party_size = models.PositiveIntegerField(default=1)
     description = models.TextField(blank=True)
 
     def __str__(self):
