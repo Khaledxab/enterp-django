@@ -90,8 +90,9 @@ This is a Django-based enterprise website project. It includes user authenticati
 - **Payload for POST:**
     ```json
     {
-        "field1": "value1",
-        "field2": "value2"
+    "description": "string",
+    "date": "YYYY-MM-DD",
+    "time": "10:30"
     }
     ```
 
