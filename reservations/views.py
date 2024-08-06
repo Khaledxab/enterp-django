@@ -1,7 +1,7 @@
 from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
 from .models import Reservation
 from .serializers import ReservationSerializer
-from rest_framework.permissions import IsAuthenticated
 
 class ReservationListCreateView(generics.ListCreateAPIView):
     queryset = Reservation.objects.all()
